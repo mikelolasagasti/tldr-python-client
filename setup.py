@@ -31,10 +31,6 @@ setup(
     },
     data_files=[('share/man/man1', ['docs/man/tldr.1'])],
     install_requires=required,
-    tests_require=[
-        'pytest',
-        'pytest-runner',
-    ],
     version=version,
     python_requires='~=3.6',
     classifiers=[

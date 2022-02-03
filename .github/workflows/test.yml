@@ -21,7 +21,7 @@ jobs:
     - name: Install developer dependencies
       run: |
         python3 -m pip install -U pip setuptools
-        python3 -m pip install -U pytest pytest-runner flake8
+        python3 -m pip install -U pytest flake8
 
     - name: Install sphinx dependencies
       run: >-
@@ -47,7 +47,7 @@ jobs:
       run: python3 -m flake8
 
     - name: Run testsuite
-      run: python3 setup.py pytest
+      run: python3 -m pytest
 
     - name: Test tldr cli
       run: |
